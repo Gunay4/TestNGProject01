@@ -1,4 +1,71 @@
 package US_406;
 
-public class TC_06 {
+import Utility.BaseDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TC_06 extends BaseDriver {
+    @Test
+    public void searchInPatientList() {
+        driver.get("https://demo.openmrs.org/openmrs/login.htm");
+        PomClass6 pom = new PomClass6();
+        pom.userName.sendKeys("admin");
+        pom.password.sendKeys("Admin123");
+        pom.randomLocation.get((int) (Math.random() * (pom.randomLocation.size()))).click();
+        pom.loginButton.click();
+        pom.findPatientRecord.click();
+        pom.patientSearch.sendKeys(nameOrId());
+        if (pom.noRecordsFound.size() == 1) {
+            Assert.assertTrue(pom.noRecordsFound
+                            .getFirst()
+                            .getText()
+                            .equals("No matching records found")
+                    , "No message found indicating no match.");
+        } else pom.patientsFound
+                .getFirst()
+                .click();
+
+        boolean allMatched = false;
+        for (int i = 0; i < pom.infoRow.size(); i++) {
+            for (WebElement p : pom.infoRow) {
+                if (p.getText().equals(patientInfos().get(i)))
+                    allMatched = true;
+            }
+        }
+
+        Assert.assertTrue(allMatched
+                , "All or part of the patient's info cannot be displayed.");
+
+        pom.returnToHomePage.click();
+    }
+
+    public List<String> patientInfos() {
+        List<String> pI = new ArrayList<>();
+
+        pI.add("DIAGNOSES");
+        pI.add("LATEST OBSERVATIONS");
+        pI.add("HEALTH TREND SUMMARY");
+        pI.add("WEIGHT GRAPH");
+        pI.add("VITALS");
+        pI.add("APPOINTMENTS");
+        pI.add("RECENT VISITS");
+        pI.add("FAMILY");
+        pI.add("CONDITIONS");
+        pI.add("ATTACHMENTS");
+        pI.add("ALLERGIES");
+
+        return pI;
+    }
+
+    public String nameOrId() {
+        List<String> nOI = new ArrayList<>();
+        nOI.add("Kerem İnci");
+        nOI.add("100J7W");
+
+        return nOI.get((int) (Math.random() * (nOI.size())));
+    }
 }
