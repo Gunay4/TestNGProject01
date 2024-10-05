@@ -34,6 +34,9 @@ public class PomClass6 {
     @FindBy(xpath = "//td[text()='No matching records found']")
     public List<WebElement> noRecordsFound;
 
+    @FindBy(css = "[id='content']>h1")
+    public List<WebElement> deletedPatient;
+
     @FindBy(css = "[role='alert']>tr")
     public List<WebElement> patientsFound;
 
@@ -42,5 +45,8 @@ public class PomClass6 {
 
     @FindBy(css = "[class='icon-home small']")
     public WebElement returnToHomePage;
+
+    @FindBy(css = "[class='nav-item logout']>a")
+    public WebElement logOut;
 
 }
