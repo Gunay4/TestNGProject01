@@ -19,28 +19,36 @@ public class TC_06 extends BaseDriver {
         pom.loginButton.click();
         pom.findPatientRecord.click();
         pom.patientSearch.sendKeys(nameOrId());
-        if (pom.noRecordsFound.size() == 1) {
+        if (!pom.noRecordsFound.isEmpty()) {
             Assert.assertTrue(pom.noRecordsFound
                             .getFirst()
                             .getText()
                             .equals("No matching records found")
                     , "No message found indicating no match.");
-        } else pom.patientsFound
-                .getFirst()
-                .click();
-
-        boolean allMatched = false;
-        for (int i = 0; i < pom.infoRow.size(); i++) {
-            for (WebElement p : pom.infoRow) {
-                if (p.getText().equals(patientInfos().get(i)))
-                    allMatched = true;
+        } else if (!pom.deletedPatient.isEmpty()) {
+            Assert.assertTrue(pom.deletedPatient
+                            .getFirst()
+                            .getText()
+                            .equals("This patient has been deleted")
+                    , "The message indicating that the patient record was deleted could not be displayed.");
+        } else {
+            pom.patientsFound
+                    .getFirst()
+                    .click();
+            boolean allMatched = false;
+            for (int i = 0; i < pom.infoRow.size(); i++) {
+                for (WebElement p : pom.infoRow) {
+                    if (p.getText().equals(patientInfos().get(i))) {
+                        allMatched = true;
+                        break;
+                    } else allMatched = false;
+                }
             }
+            Assert.assertTrue(allMatched
+                    , "All or part of the patient's info cannot be displayed.");
         }
-
-        Assert.assertTrue(allMatched
-                , "All or part of the patient's info cannot be displayed.");
-
         pom.returnToHomePage.click();
+        pom.logOut.click();
     }
 
     public List<String> patientInfos() {
@@ -64,7 +72,7 @@ public class TC_06 extends BaseDriver {
     public String nameOrId() {
         List<String> nOI = new ArrayList<>();
         nOI.add("Kerem İnci");
-        nOI.add("100J7W");
+        nOI.add("100JUM");
 
         return nOI.get((int) (Math.random() * (nOI.size())));
     }
