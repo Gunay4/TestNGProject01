@@ -18,7 +18,7 @@ public class TC_06 extends BaseDriver {
         pom.randomLocation.get((int) (Math.random() * (pom.randomLocation.size()))).click();
         pom.loginButton.click();
         pom.findPatientRecord.click();
-        pom.patientSearch.sendKeys(nameOrId());
+        pom.patientSearch.sendKeys(PatientSearchInfos());
         if (!pom.noRecordsFound.isEmpty()) {
             Assert.assertTrue(pom.noRecordsFound
                             .getFirst()
@@ -69,11 +69,32 @@ public class TC_06 extends BaseDriver {
         return pI;
     }
 
-    public String nameOrId() {
-        List<String> nOI = new ArrayList<>();
-        nOI.add("Kerem İnci");
-        nOI.add("100JUM");
-
-        return nOI.get((int) (Math.random() * (nOI.size())));
+    public String PatientSearchInfos() {
+        PomClass6 pom = new PomClass6();
+        List<String> patientSearchInfos = new ArrayList<>();
+        for (int i = 0; i < pom.pages.size(); i++) {
+            for (int j = 0; j < pom.patientIds.size(); j++) {
+                patientSearchInfos.add(pom.patientIds
+                        .get(j)
+                        .getText()
+                        .replace("Recent", ""));
+                patientSearchInfos.add(pom.patientNames
+                        .get(j)
+                        .getText());
+            }
+            pom.pages.get(i).click();
+            if (i == pom.pages.size() - 1) {
+                for (int j = 0; j < pom.patientIds.size(); j++) {
+                    patientSearchInfos.add(pom.patientIds
+                            .get(j)
+                            .getText().replace("Recent", ""));
+                    patientSearchInfos.add(pom.patientNames
+                            .get(j)
+                            .getText());
+                }
+            }
+        }
+        String randomInfo = patientSearchInfos.get((int) ((Math.random()) * (patientSearchInfos.size())));
+        return randomInfo;
     }
 }
