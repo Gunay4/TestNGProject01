@@ -23,10 +23,19 @@ public class PomClass6 {
     public List<WebElement> randomLocation;
 
     @FindBy(css = "[id='loginButton']")
-    public WebElement loginButton; //TODO: kod sadeliği için password sonrası Keys.Enter da kullanılabilir.
+    public WebElement loginButton;
 
     @FindBy(css = "[class='icon-search']")
     public WebElement findPatientRecord;
+
+    @FindBy(css = "[class='fg-button ui-button ui-state-default']")
+    public List<WebElement> pages;
+
+    @FindBy(css = "[role='alert']>tr> :nth-child(1)")
+    public List<WebElement> patientIds;
+
+    @FindBy(css = "[role='alert']>tr> :nth-child(2)")
+    public List<WebElement> patientNames;
 
     @FindBy(css = "[id='patient-search']")
     public WebElement patientSearch;
