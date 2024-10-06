@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import java.awt.*;
 import java.time.Duration;
 
 public class BaseDriver {
@@ -18,9 +19,10 @@ public class BaseDriver {
     public static WebDriverWait wait;
     public static JavascriptExecutor js;
     public static Actions actions;
+    public static Robot robot;
 
     @BeforeClass
-    public void BaslangicIslemleri() {
+    public void initialOperations() throws AWTException {
         // System.out.println("Başlangıç işlemleri yapılıyor");
 
         driver = new ChromeDriver();
@@ -32,10 +34,11 @@ public class BaseDriver {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         js = (JavascriptExecutor) driver;
         actions=new Actions(driver);
+        robot=new Robot();
     }
 
     @AfterClass
-    public void KapanisIslemleri() {
+    public void closingOperations() {
         // System.out.println("Kapanis işlemleri yapılıyor");
 
         Tools.wait(3);
