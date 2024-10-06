@@ -33,7 +33,11 @@ public class TC_08 extends BaseDriver {
     public int TotalPatient() {
         PomClass8 pom = new PomClass8();
         List<String> patientCount = new ArrayList<>();
-        for (int i = 0; i < pom.pages.size(); i++) {
+        int limit;
+        if (pom.pages.isEmpty())
+            limit=1;
+        else limit=pom.pages.size();
+        for (int i = 0; i < limit; i++) {
             for (int j = 0; j < pom.patientIds.size(); j++) {
                 patientCount
                         .add(pom.patientIds
@@ -41,14 +45,16 @@ public class TC_08 extends BaseDriver {
                                 .getText()
                                 .replace("Recent", ""));
             }
-            pom.pages.get(i).click();
-            if (i == pom.pages.size() - 1) {
-                for (int j = 0; j < pom.patientIds.size(); j++) {
-                    patientCount
-                            .add(pom.patientIds
-                                    .get(j)
-                                    .getText()
-                                    .replace("Recent", ""));
+            if (!pom.pages.isEmpty()) {
+                pom.pages.get(i).click();
+                if (i == pom.pages.size() - 1) {
+                    for (int j = 0; j < pom.patientIds.size(); j++) {
+                        patientCount
+                                .add(pom.patientIds
+                                        .get(j)
+                                        .getText()
+                                        .replace("Recent", ""));
+                    }
                 }
             }
         }
