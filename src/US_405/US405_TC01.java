@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC_05 extends BaseDriver {
+public class US405_TC01 extends BaseDriver {
 
     @Test
     public void MyAccount() {
