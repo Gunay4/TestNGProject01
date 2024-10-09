@@ -31,8 +31,12 @@ public class TC_10 extends BaseDriver {
         wait.until(ExpectedConditions.visibilityOf(pom6.patientSearch)).sendKeys("100JWH");
         wait.until(ExpectedConditions.visibilityOf(pom5.listFirst)).click();
         ZonedDateTime zdt = ZonedDateTime.now();
-        if (!zdt.getZone().equals("UTC")) {
-         Assert.assertTrue(pom5.dateMessage.getText().contains("restart your browser"));
+
+        if (!String.valueOf(zdt.getZone()).equals("Etc/UTC")){
+            wait.until(ExpectedConditions.visibilityOf(pom5.dateMessage));
+        }
+        if (!String.valueOf(zdt.getZone()).equals("Etc/UTC")) {
+            Assert.assertTrue(pom5.dateMessage.getText().contains("restart your browser"));
         }
     }
 }
