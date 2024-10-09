@@ -60,4 +60,19 @@ public class PomClass5 {
 
     @FindBy(css = "[class='nav-item logout']>a")
     public WebElement logOut;
+
+    @FindBy(id = "Inpatient Ward")
+    public WebElement inpatientLocation;
+
+    @FindBy(xpath = "(//i[@class='icon-calendar'])[2]")
+    public WebElement AppointmentScheduling;
+
+    @FindBy(id = "appointmentschedulingui-manageAppointments-app")
+    public WebElement manageAppointment;
+
+    @FindBy(xpath = "(//div[@class='text'])[3]")
+    public WebElement dateMessage;
+
+    @FindBy(css = "[aria-live='polite']")
+    public WebElement listFirst;
 }
