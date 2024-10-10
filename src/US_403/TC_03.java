@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class TC_03 extends BaseDriver {
 
     @Test
-    public void logOut (){
+    public void LogOut (){
 
         driver.get("https://openmrs.org");
         POM pom = new POM();
