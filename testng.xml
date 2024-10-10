@@ -1,2 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/GÜNAY/IdeaProjects/TestNGProject01/src"><classes><class name="US_405.US405_TC01"><methods><include name="MyAccount"/></methods></class><class name="US_406.TC_06"><methods><include name="searchInPatientList"/></methods></class><class name="US_407.TC_07"><methods><include name="deletingPatientRecord"/></methods></class><class name="US_408.TC_08"><methods><include name="listingPatients"/></methods></class><class name="US_409.TC_09"><methods><include name="PatientRegistration"/></methods></class></classes></test></suite>
+<suite name="My Suite">
+    <test name="My Test">
+        <classes>
+
+
+            <class name="US_402.US402_TC01"> </class>
+
+            <class name="US_405.US405_TC01"> </class>
+
+            <class name="US_406.US406_TC01"> </class>
+
+            <class name="US_407.US407_TC01"> </class>
+
+            <class name="US_408.US408_TC01"> </class>
+
+            <class name="US_404.US404_TC01" > </class>
+
+            <class name="US_409.US409_TC01"> </class>
+
+            <class name="US_410.US410_TC01"> </class>
+
+            <class name="US_403.US403_TC01"> </class>
+
+        </classes>
+    </test>
+</suite>

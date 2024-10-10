@@ -7,8 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import java.awt.*;
 import java.time.Duration;
@@ -33,8 +36,8 @@ public class BaseDriver {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // 20 sn mühlet: elementi bulma mühleti
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         js = (JavascriptExecutor) driver;
-        actions=new Actions(driver);
-        robot=new Robot();
+        actions = new Actions(driver);
+        robot = new Robot();
     }
 
     @AfterClass
@@ -45,7 +48,16 @@ public class BaseDriver {
         driver.quit();
     }
 
+    @BeforeMethod
+    public void BeforeMethod() {
+        adLog.info("The method started working");
+    }
 
+    @AfterMethod
+    public void AfterMethod(ITestResult result) {
+        adLog.info(result.getName() + " Method work complete");
+        adLog.info(result.getStatus() == 1 ? "Passed" : "Failed");
+    }
 
 
 }

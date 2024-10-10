@@ -21,10 +21,10 @@ public class US405_TC01 extends BaseDriver {
         wait.until(ExpectedConditions.elementToBeClickable(pom.exploreOpenMRS2)).click();
         wait.until(ExpectedConditions.elementToBeClickable(pom.entertheOpenMRS2Demo));
         js.executeScript("arguments[0].click();",pom.entertheOpenMRS2Demo);
-        wait.until(ExpectedConditions.elementToBeClickable(pom.userName)).sendKeys("admin");
-        wait.until(ExpectedConditions.elementToBeClickable(pom.password)).sendKeys("Admin123");
-
         wait.until(ExpectedConditions.urlContains("login"));
+        wait.until(ExpectedConditions.visibilityOf(pom.userName)).sendKeys("admin");
+        wait.until(ExpectedConditions.visibilityOf(pom.password)).sendKeys("Admin123");
+
         pom.randomLocation.get((int) (Math.random() * pom.randomLocation.size())).click();
         pom.loginButton.click();
         wait.until(ExpectedConditions.urlContains("home"));
@@ -44,11 +44,6 @@ public class US405_TC01 extends BaseDriver {
         pom.returnToHomePage.click();
         wait.until(ExpectedConditions.elementToBeClickable(pom.logOut)).click();
         wait.until(ExpectedConditions.urlContains("login"));
-
-
-
-
-
 
 
     }
