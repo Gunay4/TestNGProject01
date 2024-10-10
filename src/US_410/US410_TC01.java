@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.time.ZonedDateTime;
 
-public class TC_10 extends BaseDriver {
+public class US410_TC01 extends BaseDriver {
 
     @Test
     public void IncorrectSystemTimezoneduringAppointmentBooking() {

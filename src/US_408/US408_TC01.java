@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TC_08 extends BaseDriver {
-    @Test
+public class US408_TC01 extends BaseDriver {
+    @Test()
     public void listingPatients() {
         driver.get("https://demo.openmrs.org/openmrs/login.htm");
         POM pom=new POM();

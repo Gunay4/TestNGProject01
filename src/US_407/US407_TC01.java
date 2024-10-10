@@ -1,82 +1,51 @@
-package US_406;
+package US_407;
 
 import Utility.BaseDriver;
 import Utility.POM;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TC_06 extends BaseDriver {
+public class US407_TC01 extends BaseDriver {
     @Test
-    public void searchInPatientList() {
+    public void deletingPatientRecord() {
         driver.get("https://demo.openmrs.org/openmrs/login.htm");
-        POM pom = new POM();
+        POM pom=new POM();
         pom.userName.sendKeys("admin");
         pom.password.sendKeys("Admin123");
         pom.randomLocation.get((int) (Math.random() * (pom.randomLocation.size()))).click();
         pom.loginButton.click();
         pom.findPatientRecord.click();
         pom.patientSearch.sendKeys(PatientSearchInfos());
-        if (!pom.noRecordsFound.isEmpty()) {
-            Assert.assertTrue(pom.noRecordsFound
-                            .getFirst()
-                            .getText()
-                            .equals("No matching records found")
-                    , "No message found indicating no match.");
-        } else if (!pom.deletedPatient.isEmpty()) {
-            Assert.assertTrue(pom.deletedPatient
-                            .getFirst()
-                            .getText()
-                            .equals("This patient has been deleted")
-                    , "The message indicating that the patient record was deleted could not be displayed.");
-        } else {
-            pom.patientsFound
-                    .getFirst()
-                    .click();
-            boolean allMatched = false;
-            for (int i = 0; i < pom.infoRow.size(); i++) {
-                for (WebElement p : pom.infoRow) {
-                    if (p.getText().equals(patientInfos().get(i))) {
-                        allMatched = true;
-                        break;
-                    } else allMatched = false;
+        if (!pom.patientsFound.isEmpty()) {
+            pom.patientsFound.get((int) (Math.random() * (pom.patientsFound.size()))).click();
+            String id = pom.individualId.getText();
+            for (int i = 0; i < pom.generalActions.size(); i++) {
+                if (pom.generalActions.get(i).getText().contains("Delete Patient")) {
+                    pom.generalActions.get(i).click();
+                    break;
                 }
             }
-            Assert.assertTrue(allMatched
-                    , "All or part of the patient's info cannot be displayed.");
+            pom.deleteReason.sendKeys(DeleteReason());
+            pom.deleteConfirm.click();
+            pom.patientSearch.clear();
+            pom.patientSearch.sendKeys(id);
+            Assert.assertTrue(!pom.noRecordsFound.isEmpty()
+                    , "Patient record couldn't deleted.");
         }
         pom.returnToHomePage.click();
         pom.logOut.click();
     }
 
-    public List<String> patientInfos() {
-        List<String> pI = new ArrayList<>();
-
-        pI.add("DIAGNOSES");
-        pI.add("LATEST OBSERVATIONS");
-        pI.add("HEALTH TREND SUMMARY");
-        pI.add("WEIGHT GRAPH");
-        pI.add("VITALS");
-        pI.add("APPOINTMENTS");
-        pI.add("RECENT VISITS");
-        pI.add("FAMILY");
-        pI.add("CONDITIONS");
-        pI.add("ATTACHMENTS");
-        pI.add("ALLERGIES");
-
-        return pI;
-    }
-
     public String PatientSearchInfos() {
-        POM pom = new POM();
+        POM pom=new POM();
         List<String> patientSearchInfos = new ArrayList<>();
         int limit;
         if (pom.pages.isEmpty())
-            limit=1;
-        else limit=pom.pages.size();
+            limit = 1;
+        else limit = pom.pages.size();
         for (int i = 0; i < limit; i++) {
             for (int j = 0; j < pom.patientIds.size(); j++) {
                 patientSearchInfos.add(pom.patientIds
@@ -107,5 +76,20 @@ public class TC_06 extends BaseDriver {
             String randomInfo = patientSearchInfos.get((int) ((Math.random()) * (patientSearchInfos.size())));
             return randomInfo;
         }
+    }
+
+    public String DeleteReason() {
+        List<String> deleteReason = new ArrayList<>();
+        deleteReason.add("Privacy");
+        deleteReason.add("Incorrect Information");
+        deleteReason.add("Association Error");
+        deleteReason.add("Deceased");
+        deleteReason.add("Patient Request");
+        deleteReason.add("Legal Reasons");
+        deleteReason.add("Security Breach");
+        deleteReason.add("Database Issue");
+
+        String randomReason = deleteReason.get((int) ((Math.random()) * (deleteReason.size())));
+        return randomReason;
     }
 }

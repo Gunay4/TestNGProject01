@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC_03 extends BaseDriver {
+public class US403_TC01 extends BaseDriver {
 
     @Test
     public void LogOut (){
@@ -35,15 +35,8 @@ public class TC_03 extends BaseDriver {
         pom.loginButton.click();
 
 
-
-
-        //Degisiklik yapilacak bolum
-        PomClass3 pom1 = new PomClass3();
-        wait.until(ExpectedConditions.visibilityOf(pom1.selectedLocation));
-        String displayedLocationText = pom1.selectedLocation.getText();
-
-
-
+        wait.until(ExpectedConditions.visibilityOf(pom.selectedLocation));
+        String displayedLocationText = pom.selectedLocation.getText();
 
 
         Assert.assertEquals(selectedLocationText, displayedLocationText, "Seçilen ve görüntülenen location eşleşmiyor!");

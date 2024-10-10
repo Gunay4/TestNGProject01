@@ -72,7 +72,7 @@ public class POM {
     @FindBy(css = "[class='icon-search']")
     public WebElement findPatientRecord;
 
-    @FindBy(css = "[class='icon-user']")
+    @FindBy(css = "[id='apps'] > :nth-child(6)")
     public WebElement registerPatient;
 
     @FindBy(xpath = "(//i[@class='icon-calendar'])[2]")
@@ -206,5 +206,8 @@ public class POM {
 
     @FindBy(css = "[class='mt-0 mb-2 name']")
     public WebElement individualName;
+
+    @FindBy(css = "#selected-location")
+    public WebElement selectedLocation;
 
 }

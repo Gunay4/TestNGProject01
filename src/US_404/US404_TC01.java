@@ -7,9 +7,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC_04 extends BaseDriver {
+public class US404_TC01 extends BaseDriver {
 
-    @Test
+    @Test()
     public void PatientRegistration() {
         driver.get("https://demo.openmrs.org/openmrs/login.htm");
 
