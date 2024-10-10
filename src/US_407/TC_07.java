@@ -1,6 +1,7 @@
 package US_407;
 
 import Utility.BaseDriver;
+import Utility.POM;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ public class TC_07 extends BaseDriver {
     @Test
     public void deletingPatientRecord() {
         driver.get("https://demo.openmrs.org/openmrs/login.htm");
-        PomClass7 pom = new PomClass7();
+        POM pom=new POM();
         pom.userName.sendKeys("admin");
         pom.password.sendKeys("Admin123");
         pom.randomLocation.get((int) (Math.random() * (pom.randomLocation.size()))).click();
@@ -39,7 +40,7 @@ public class TC_07 extends BaseDriver {
     }
 
     public String PatientSearchInfos() {
-        PomClass7 pom = new PomClass7();
+        POM pom=new POM();
         List<String> patientSearchInfos = new ArrayList<>();
         int limit;
         if (pom.pages.isEmpty())
