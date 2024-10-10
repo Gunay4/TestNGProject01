@@ -21,7 +21,7 @@ public class US410_TC01 extends BaseDriver {
 
         wait.until(ExpectedConditions.elementToBeClickable(pom.appointmentScheduling)).click();
         wait.until(ExpectedConditions.elementToBeClickable(pom.manageAppointment)).click();
-        wait.until(ExpectedConditions.visibilityOf(pom.patientSearch)).sendKeys("100JWH");
+        wait.until(ExpectedConditions.visibilityOf(pom.patientSearch)).sendKeys("100J35");
         wait.until(ExpectedConditions.visibilityOf(pom.listFirst)).click();
         ZonedDateTime zdt = ZonedDateTime.now();
 

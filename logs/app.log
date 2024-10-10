@@ -112,3 +112,350 @@
 2024-10-10 13:40:43.819 INFO  The method started working
 2024-10-10 13:40:46.235 INFO  IncorrectLogin Method work complete
 2024-10-10 13:40:46.235 INFO  Passed
+2024-10-10 21:59:45.522 INFO  The method started working
+2024-10-10 22:00:21.874 INFO  IncorrectLogin Method work complete
+2024-10-10 22:00:21.874 INFO  Failed
+2024-10-10 22:00:21.876 INFO  The method started working
+2024-10-10 22:00:21.885 INFO  IncorrectLogin Method work complete
+2024-10-10 22:00:21.886 INFO  Failed
+2024-10-10 22:00:21.887 INFO  The method started working
+2024-10-10 22:00:21.904 INFO  IncorrectLogin Method work complete
+2024-10-10 22:00:21.904 INFO  Failed
+2024-10-10 22:00:21.907 INFO  The method started working
+2024-10-10 22:00:21.920 INFO  IncorrectLogin Method work complete
+2024-10-10 22:00:21.920 INFO  Failed
+2024-10-10 22:00:21.921 INFO  The method started working
+2024-10-10 22:00:21.937 INFO  IncorrectLogin Method work complete
+2024-10-10 22:00:21.938 INFO  Failed
+2024-10-10 22:00:21.939 INFO  The method started working
+2024-10-10 22:00:21.955 INFO  IncorrectLogin Method work complete
+2024-10-10 22:00:21.955 INFO  Failed
+2024-10-10 22:00:26.181 INFO  The method started working
+2024-10-10 22:03:47.455 INFO  The method started working
+2024-10-10 22:04:01.176 INFO  IncorrectLogin Method work complete
+2024-10-10 22:04:01.177 INFO  Passed
+2024-10-10 22:04:01.180 INFO  The method started working
+2024-10-10 22:04:23.394 INFO  IncorrectLogin Method work complete
+2024-10-10 22:04:23.394 INFO  Failed
+2024-10-10 22:04:23.396 INFO  The method started working
+2024-10-10 22:07:40.961 INFO  The method started working
+2024-10-10 22:07:51.002 INFO  Login Method work complete
+2024-10-10 22:07:51.002 INFO  Failed
+2024-10-10 22:08:10.840 INFO  The method started working
+2024-10-10 22:08:16.092 INFO  Login Method work complete
+2024-10-10 22:08:16.092 INFO  Failed
+2024-10-10 22:09:23.448 INFO  The method started working
+2024-10-10 22:09:28.775 INFO  Login Method work complete
+2024-10-10 22:09:28.775 INFO  Failed
+2024-10-10 22:09:41.858 INFO  The method started working
+2024-10-10 22:10:00.665 INFO  MyAccount Method work complete
+2024-10-10 22:10:00.666 INFO  Passed
+2024-10-10 22:10:42.757 INFO  The method started working
+2024-10-10 22:10:47.935 INFO  Login Method work complete
+2024-10-10 22:10:47.935 INFO  Failed
+2024-10-10 22:11:19.171 INFO  The method started working
+2024-10-10 22:11:24.319 INFO  Login Method work complete
+2024-10-10 22:11:24.319 INFO  Failed
+2024-10-10 22:13:07.986 INFO  The method started working
+2024-10-10 22:13:13.546 INFO  Login Method work complete
+2024-10-10 22:13:13.546 INFO  Failed
+2024-10-10 22:15:59.094 INFO  The method started working
+2024-10-10 22:16:11.832 INFO  Login Method work complete
+2024-10-10 22:16:11.833 INFO  Passed
+2024-10-10 22:16:23.639 INFO  The method started working
+2024-10-10 22:16:23.652 INFO  IncorrectLogin Method work complete
+2024-10-10 22:16:23.652 INFO  Failed
+2024-10-10 22:16:23.654 INFO  The method started working
+2024-10-10 22:16:23.657 INFO  IncorrectLogin Method work complete
+2024-10-10 22:16:23.657 INFO  Failed
+2024-10-10 22:16:23.659 INFO  The method started working
+2024-10-10 22:16:23.662 INFO  IncorrectLogin Method work complete
+2024-10-10 22:16:23.662 INFO  Failed
+2024-10-10 22:16:23.664 INFO  The method started working
+2024-10-10 22:16:23.668 INFO  IncorrectLogin Method work complete
+2024-10-10 22:16:23.668 INFO  Failed
+2024-10-10 22:16:23.670 INFO  The method started working
+2024-10-10 22:16:23.674 INFO  IncorrectLogin Method work complete
+2024-10-10 22:16:23.675 INFO  Failed
+2024-10-10 22:16:23.677 INFO  The method started working
+2024-10-10 22:16:23.681 INFO  IncorrectLogin Method work complete
+2024-10-10 22:16:23.681 INFO  Failed
+2024-10-10 22:16:23.684 INFO  The method started working
+2024-10-10 22:16:35.879 INFO  Login Method work complete
+2024-10-10 22:16:35.879 INFO  Passed
+2024-10-10 22:18:08.816 INFO  The method started working
+2024-10-10 22:18:14.128 INFO  Login Method work complete
+2024-10-10 22:18:14.128 INFO  Failed
+2024-10-10 22:18:14.132 INFO  The method started working
+2024-10-10 22:18:15.701 INFO  Login Method work complete
+2024-10-10 22:18:15.702 INFO  Failed
+2024-10-10 22:18:15.704 INFO  The method started working
+2024-10-10 22:18:17.433 INFO  Login Method work complete
+2024-10-10 22:18:17.433 INFO  Failed
+2024-10-10 22:18:17.436 INFO  The method started working
+2024-10-10 22:18:18.780 INFO  Login Method work complete
+2024-10-10 22:18:18.781 INFO  Failed
+2024-10-10 22:18:18.784 INFO  The method started working
+2024-10-10 22:18:20.141 INFO  Login Method work complete
+2024-10-10 22:18:20.141 INFO  Failed
+2024-10-10 22:18:20.142 INFO  The method started working
+2024-10-10 22:18:21.680 INFO  Login Method work complete
+2024-10-10 22:18:21.680 INFO  Failed
+2024-10-10 22:18:43.081 INFO  The method started working
+2024-10-10 22:18:55.750 INFO  Login Method work complete
+2024-10-10 22:18:55.750 INFO  Passed
+2024-10-10 22:18:55.754 INFO  The method started working
+2024-10-10 22:19:17.808 INFO  Login Method work complete
+2024-10-10 22:19:17.808 INFO  Failed
+2024-10-10 22:19:17.810 INFO  The method started working
+2024-10-10 22:19:39.872 INFO  Login Method work complete
+2024-10-10 22:19:39.872 INFO  Failed
+2024-10-10 22:19:39.873 INFO  The method started working
+2024-10-10 22:20:01.678 INFO  Login Method work complete
+2024-10-10 22:20:01.678 INFO  Failed
+2024-10-10 22:20:01.679 INFO  The method started working
+2024-10-10 22:20:26.793 INFO  The method started working
+2024-10-10 22:20:36.879 INFO  IncorrectLogin Method work complete
+2024-10-10 22:20:36.880 INFO  Failed
+2024-10-10 22:20:36.882 INFO  The method started working
+2024-10-10 22:20:46.925 INFO  IncorrectLogin Method work complete
+2024-10-10 22:20:46.925 INFO  Failed
+2024-10-10 22:20:46.929 INFO  The method started working
+2024-10-10 22:21:04.012 INFO  The method started working
+2024-10-10 22:21:10.504 INFO  IncorrectLogin Method work complete
+2024-10-10 22:21:10.504 INFO  Failed
+2024-10-10 22:21:10.506 INFO  The method started working
+2024-10-10 22:21:10.529 INFO  IncorrectLogin Method work complete
+2024-10-10 22:21:10.530 INFO  Failed
+2024-10-10 22:21:10.531 INFO  The method started working
+2024-10-10 22:21:10.548 INFO  IncorrectLogin Method work complete
+2024-10-10 22:21:10.548 INFO  Failed
+2024-10-10 22:21:10.550 INFO  The method started working
+2024-10-10 22:21:10.562 INFO  IncorrectLogin Method work complete
+2024-10-10 22:21:10.563 INFO  Failed
+2024-10-10 22:21:10.565 INFO  The method started working
+2024-10-10 22:21:10.580 INFO  IncorrectLogin Method work complete
+2024-10-10 22:21:10.580 INFO  Failed
+2024-10-10 22:21:10.581 INFO  The method started working
+2024-10-10 22:21:10.592 INFO  IncorrectLogin Method work complete
+2024-10-10 22:21:10.592 INFO  Failed
+2024-10-10 22:21:10.593 INFO  The method started working
+2024-10-10 22:21:10.602 INFO  Login Method work complete
+2024-10-10 22:21:10.602 INFO  Failed
+2024-10-10 22:22:11.980 INFO  The method started working
+2024-10-10 22:22:24.463 INFO  Login Method work complete
+2024-10-10 22:22:24.463 INFO  Passed
+2024-10-10 22:22:24.479 INFO  The method started working
+2024-10-10 22:22:25.708 INFO  IncorrectLogin Method work complete
+2024-10-10 22:22:25.708 INFO  Passed
+2024-10-10 22:22:25.714 INFO  The method started working
+2024-10-10 22:22:26.566 INFO  IncorrectLogin Method work complete
+2024-10-10 22:22:26.566 INFO  Passed
+2024-10-10 22:22:26.568 INFO  The method started working
+2024-10-10 22:22:27.615 INFO  IncorrectLogin Method work complete
+2024-10-10 22:22:27.616 INFO  Passed
+2024-10-10 22:22:27.619 INFO  The method started working
+2024-10-10 22:22:28.823 INFO  IncorrectLogin Method work complete
+2024-10-10 22:22:28.823 INFO  Passed
+2024-10-10 22:22:28.825 INFO  The method started working
+2024-10-10 22:22:29.749 INFO  IncorrectLogin Method work complete
+2024-10-10 22:22:29.749 INFO  Passed
+2024-10-10 22:22:29.752 INFO  The method started working
+2024-10-10 22:22:31.822 INFO  IncorrectLogin Method work complete
+2024-10-10 22:22:31.822 INFO  Passed
+2024-10-10 22:22:49.118 INFO  The method started working
+2024-10-10 22:23:01.890 INFO  Login Method work complete
+2024-10-10 22:23:01.890 INFO  Passed
+2024-10-10 22:23:01.903 INFO  The method started working
+2024-10-10 22:23:02.824 INFO  IncorrectLogin Method work complete
+2024-10-10 22:23:02.825 INFO  Passed
+2024-10-10 22:23:02.827 INFO  The method started working
+2024-10-10 22:23:03.946 INFO  IncorrectLogin Method work complete
+2024-10-10 22:23:03.946 INFO  Passed
+2024-10-10 22:23:03.949 INFO  The method started working
+2024-10-10 22:23:05.085 INFO  IncorrectLogin Method work complete
+2024-10-10 22:23:05.086 INFO  Passed
+2024-10-10 22:23:05.090 INFO  The method started working
+2024-10-10 22:23:06.216 INFO  IncorrectLogin Method work complete
+2024-10-10 22:23:06.217 INFO  Passed
+2024-10-10 22:23:06.220 INFO  The method started working
+2024-10-10 22:23:07.237 INFO  IncorrectLogin Method work complete
+2024-10-10 22:23:07.238 INFO  Passed
+2024-10-10 22:23:07.241 INFO  The method started working
+2024-10-10 22:23:09.293 INFO  IncorrectLogin Method work complete
+2024-10-10 22:23:09.294 INFO  Passed
+2024-10-10 22:23:14.109 INFO  The method started working
+2024-10-10 22:23:16.945 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:23:16.945 INFO  Passed
+2024-10-10 22:23:16.947 INFO  The method started working
+2024-10-10 22:23:18.161 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:23:18.162 INFO  Passed
+2024-10-10 22:23:18.165 INFO  The method started working
+2024-10-10 22:23:19.766 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:23:19.766 INFO  Passed
+2024-10-10 22:23:19.768 INFO  The method started working
+2024-10-10 22:23:20.565 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:23:20.565 INFO  Passed
+2024-10-10 22:23:20.567 INFO  The method started working
+2024-10-10 22:23:21.778 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:23:21.778 INFO  Passed
+2024-10-10 22:23:21.780 INFO  The method started working
+2024-10-10 22:23:22.767 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:23:22.767 INFO  Passed
+2024-10-10 22:23:22.769 INFO  The method started working
+2024-10-10 22:23:34.893 INFO  PerformLoginInTheSystem Method work complete
+2024-10-10 22:23:34.893 INFO  Passed
+2024-10-10 22:23:39.523 INFO  The method started working
+2024-10-10 22:23:57.981 INFO  MyAccount Method work complete
+2024-10-10 22:23:57.981 INFO  Passed
+2024-10-10 22:24:02.647 INFO  The method started working
+2024-10-10 22:24:35.442 INFO  searchInPatientList Method work complete
+2024-10-10 22:24:35.443 INFO  Passed
+2024-10-10 22:24:40.141 INFO  The method started working
+2024-10-10 22:25:29.294 INFO  The method started working
+2024-10-10 22:25:41.288 INFO  Login Method work complete
+2024-10-10 22:25:41.288 INFO  Passed
+2024-10-10 22:25:41.300 INFO  The method started working
+2024-10-10 22:25:42.272 INFO  IncorrectLogin Method work complete
+2024-10-10 22:25:42.272 INFO  Passed
+2024-10-10 22:25:42.276 INFO  The method started working
+2024-10-10 22:25:43.624 INFO  IncorrectLogin Method work complete
+2024-10-10 22:25:43.624 INFO  Passed
+2024-10-10 22:25:43.630 INFO  The method started working
+2024-10-10 22:25:44.737 INFO  IncorrectLogin Method work complete
+2024-10-10 22:25:44.737 INFO  Passed
+2024-10-10 22:25:44.742 INFO  The method started working
+2024-10-10 22:25:45.656 INFO  IncorrectLogin Method work complete
+2024-10-10 22:25:45.656 INFO  Passed
+2024-10-10 22:25:45.659 INFO  The method started working
+2024-10-10 22:25:46.683 INFO  IncorrectLogin Method work complete
+2024-10-10 22:25:46.683 INFO  Passed
+2024-10-10 22:25:46.685 INFO  The method started working
+2024-10-10 22:25:48.640 INFO  IncorrectLogin Method work complete
+2024-10-10 22:25:48.640 INFO  Passed
+2024-10-10 22:25:53.384 INFO  The method started working
+2024-10-10 22:25:55.786 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:25:55.787 INFO  Passed
+2024-10-10 22:25:55.790 INFO  The method started working
+2024-10-10 22:25:56.978 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:25:56.979 INFO  Passed
+2024-10-10 22:25:56.981 INFO  The method started working
+2024-10-10 22:25:58.208 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:25:58.208 INFO  Passed
+2024-10-10 22:25:58.211 INFO  The method started working
+2024-10-10 22:25:59.074 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:25:59.074 INFO  Passed
+2024-10-10 22:25:59.075 INFO  The method started working
+2024-10-10 22:26:00.190 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:26:00.191 INFO  Passed
+2024-10-10 22:26:00.192 INFO  The method started working
+2024-10-10 22:26:01.105 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:26:01.105 INFO  Passed
+2024-10-10 22:26:01.107 INFO  The method started working
+2024-10-10 22:26:13.100 INFO  PerformLoginInTheSystem Method work complete
+2024-10-10 22:26:13.101 INFO  Passed
+2024-10-10 22:26:17.877 INFO  The method started working
+2024-10-10 22:26:36.433 INFO  MyAccount Method work complete
+2024-10-10 22:26:36.433 INFO  Passed
+2024-10-10 22:26:41.273 INFO  The method started working
+2024-10-10 22:27:13.862 INFO  searchInPatientList Method work complete
+2024-10-10 22:27:13.862 INFO  Passed
+2024-10-10 22:27:18.589 INFO  The method started working
+2024-10-10 22:27:33.212 INFO  deletingPatientRecord Method work complete
+2024-10-10 22:27:33.213 INFO  Passed
+2024-10-10 22:27:37.825 INFO  The method started working
+2024-10-10 22:27:44.763 INFO  listingPatients Method work complete
+2024-10-10 22:27:44.763 INFO  Passed
+2024-10-10 22:27:49.591 INFO  The method started working
+2024-10-10 22:28:00.151 INFO  PatientRegistration Method work complete
+2024-10-10 22:28:00.152 INFO  Passed
+2024-10-10 22:28:04.856 INFO  The method started working
+2024-10-10 22:28:19.805 INFO  PatientRegistration Method work complete
+2024-10-10 22:28:19.805 INFO  Passed
+2024-10-10 22:28:19.807 INFO  The method started working
+2024-10-10 22:28:30.746 INFO  PatientRegistration Method work complete
+2024-10-10 22:28:30.747 INFO  Passed
+2024-10-10 22:28:30.750 INFO  The method started working
+2024-10-10 22:28:38.575 INFO  PatientRecordMerge Method work complete
+2024-10-10 22:28:38.575 INFO  Passed
+2024-10-10 22:28:43.446 INFO  The method started working
+2024-10-10 22:29:20.449 INFO  IncorrectSystemTimezoneduringAppointmentBooking Method work complete
+2024-10-10 22:29:20.449 INFO  Failed
+2024-10-10 22:29:25.182 INFO  The method started working
+2024-10-10 22:29:39.856 INFO  LogOut Method work complete
+2024-10-10 22:29:39.857 INFO  Passed
+2024-10-10 22:31:55.594 INFO  The method started working
+2024-10-10 22:32:04.430 INFO  IncorrectSystemTimezoneduringAppointmentBooking Method work complete
+2024-10-10 22:32:04.430 INFO  Passed
+2024-10-10 22:32:56.417 INFO  The method started working
+2024-10-10 22:33:09.179 INFO  Login Method work complete
+2024-10-10 22:33:09.180 INFO  Passed
+2024-10-10 22:33:09.193 INFO  The method started working
+2024-10-10 22:33:10.525 INFO  IncorrectLogin Method work complete
+2024-10-10 22:33:10.526 INFO  Passed
+2024-10-10 22:33:10.528 INFO  The method started working
+2024-10-10 22:33:11.505 INFO  IncorrectLogin Method work complete
+2024-10-10 22:33:11.506 INFO  Passed
+2024-10-10 22:33:11.508 INFO  The method started working
+2024-10-10 22:33:12.986 INFO  IncorrectLogin Method work complete
+2024-10-10 22:33:12.986 INFO  Passed
+2024-10-10 22:33:12.990 INFO  The method started working
+2024-10-10 22:33:14.103 INFO  IncorrectLogin Method work complete
+2024-10-10 22:33:14.103 INFO  Passed
+2024-10-10 22:33:14.105 INFO  The method started working
+2024-10-10 22:33:14.989 INFO  IncorrectLogin Method work complete
+2024-10-10 22:33:14.989 INFO  Passed
+2024-10-10 22:33:14.993 INFO  The method started working
+2024-10-10 22:33:16.139 INFO  IncorrectLogin Method work complete
+2024-10-10 22:33:16.139 INFO  Passed
+2024-10-10 22:33:21.048 INFO  The method started working
+2024-10-10 22:33:23.464 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:33:23.464 INFO  Passed
+2024-10-10 22:33:23.465 INFO  The method started working
+2024-10-10 22:33:24.818 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:33:24.818 INFO  Passed
+2024-10-10 22:33:24.822 INFO  The method started working
+2024-10-10 22:33:26.515 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:33:26.515 INFO  Passed
+2024-10-10 22:33:26.517 INFO  The method started working
+2024-10-10 22:33:27.281 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:33:27.282 INFO  Passed
+2024-10-10 22:33:27.283 INFO  The method started working
+2024-10-10 22:33:28.574 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:33:28.574 INFO  Passed
+2024-10-10 22:33:28.575 INFO  The method started working
+2024-10-10 22:33:29.272 INFO  sixDifferentUnsuccessfulLogins Method work complete
+2024-10-10 22:33:29.272 INFO  Passed
+2024-10-10 22:33:29.273 INFO  The method started working
+2024-10-10 22:33:40.697 INFO  PerformLoginInTheSystem Method work complete
+2024-10-10 22:33:40.698 INFO  Passed
+2024-10-10 22:33:45.313 INFO  The method started working
+2024-10-10 22:34:04.396 INFO  MyAccount Method work complete
+2024-10-10 22:34:04.396 INFO  Passed
+2024-10-10 22:34:09.158 INFO  The method started working
+2024-10-10 22:34:42.170 INFO  searchInPatientList Method work complete
+2024-10-10 22:34:42.170 INFO  Passed
+2024-10-10 22:34:46.943 INFO  The method started working
+2024-10-10 22:35:01.942 INFO  deletingPatientRecord Method work complete
+2024-10-10 22:35:01.943 INFO  Passed
+2024-10-10 22:35:06.447 INFO  The method started working
+2024-10-10 22:35:13.923 INFO  listingPatients Method work complete
+2024-10-10 22:35:13.924 INFO  Passed
+2024-10-10 22:35:18.666 INFO  The method started working
+2024-10-10 22:35:30.362 INFO  PatientRegistration Method work complete
+2024-10-10 22:35:30.362 INFO  Passed
+2024-10-10 22:35:35.032 INFO  The method started working
+2024-10-10 22:35:49.760 INFO  PatientRegistration Method work complete
+2024-10-10 22:35:49.760 INFO  Passed
+2024-10-10 22:35:49.765 INFO  The method started working
+2024-10-10 22:36:00.711 INFO  PatientRegistration Method work complete
+2024-10-10 22:36:00.712 INFO  Passed
+2024-10-10 22:36:00.720 INFO  The method started working
+2024-10-10 22:36:08.809 INFO  PatientRecordMerge Method work complete
+2024-10-10 22:36:08.809 INFO  Passed
+2024-10-10 22:36:13.569 INFO  The method started working
+2024-10-10 22:36:22.620 INFO  IncorrectSystemTimezoneduringAppointmentBooking Method work complete
+2024-10-10 22:36:22.620 INFO  Passed
+2024-10-10 22:36:27.282 INFO  The method started working
+2024-10-10 22:36:44.960 INFO  LogOut Method work complete
+2024-10-10 22:36:44.960 INFO  Passed
