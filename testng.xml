@@ -3,6 +3,7 @@
     <test name="My Test">
         <classes>
 
+            <class name="US_401.US401_TC01"> </class>
 
             <class name="US_402.US402_TC01"> </class>
 
@@ -14,7 +15,7 @@
 
             <class name="US_408.US408_TC01"> </class>
 
-            <class name="US_404.US404_TC01" > </class>
+            <class name="US_404.US404_TC01"> </class>
 
             <class name="US_409.US409_TC01"> </class>
 
