@@ -1,6 +1,7 @@
 package US_406;
 
 import Utility.BaseDriver;
+import Utility.POM;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,7 +13,7 @@ public class TC_06 extends BaseDriver {
     @Test
     public void searchInPatientList() {
         driver.get("https://demo.openmrs.org/openmrs/login.htm");
-        PomClass6 pom = new PomClass6();
+        POM pom = new POM();
         pom.userName.sendKeys("admin");
         pom.password.sendKeys("Admin123");
         pom.randomLocation.get((int) (Math.random() * (pom.randomLocation.size()))).click();
@@ -70,7 +71,7 @@ public class TC_06 extends BaseDriver {
     }
 
     public String PatientSearchInfos() {
-        PomClass6 pom = new PomClass6();
+        POM pom = new POM();
         List<String> patientSearchInfos = new ArrayList<>();
         int limit;
         if (pom.pages.isEmpty())
